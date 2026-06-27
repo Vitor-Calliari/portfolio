@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitor Calliari — Analista de Sistemas</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- ANIMATED BACKGROUND -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">vitor.calliari</a>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#experiencia">experiência</a></li>
+            <li><a href="#habilidades">habilidades</a></li>
+            <li><a href="#projetos">projetos</a></li>
+            <li><a href="#contato">contato</a></li>
+          </ul>
+          <button
+            class="theme-btn"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            🌙
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="inicio">
+        <div class="hero-status">
+          Toledo, PR · Análise e Desenvolvimento de Sistemas
+        </div>
+        <h1>Vitor Bernhard<br /><span class="name-dim">Calliari</span></h1>
+        <p class="hero-role">Analista de Suporte<span class="cursor"></span></p>
+        <p class="hero-bio">
+          Profissional em transição consolidada para TI, com experiência em
+          suporte N1/N2, desenvolvimento web e ambientes ERP SaaS. Formado em
+          Análise e Desenvolvimento de Sistemas pela faculdade Biopark Educação.
+        </p>
+        <div class="hero-cta">
+          <a href="mailto:vitorcalliari@hotmail.com" class="btn btn-primary">
+            <svg
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,12 2,6" />
+            </svg>
+            enviar e-mail
+          </a>
+          <a
+            href="https://linkedin.com/in/vitor-calliari-6b900a1b3"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost"
+            >linkedin</a
+          >
+          <a
+            href="https://github.com/Vitor-Calliari"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost"
+            >github</a
+          >
+        </div>
+
+        <div class="stats-bar">
+          <div class="stat">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">anos em TI</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="2" data-exact="true">0</span>
+            <span class="stat-label">empresas ERP</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="8">0</span>
+            <span class="stat-label">tecnologias</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="2" data-exact="true">0</span>
+            <span class="stat-label">graduações</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre">
+        <div class="section-header reveal">
+          <span class="section-tag">sobre</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              Profissional com trajetória multidisciplinar, combinando formação
+              jurídica com atuação prática em tecnologia. Minha transição de
+              carreira foi construída com experiência real — não apenas
+              acadêmica.
+            </p>
+            <p>
+              Trabalhei como estagiário de desenvolvimento em Backend com Java e
+              Frontend com HTML, CSS e JavaScript, e atualmente atuo como
+              Analista de Suporte em uma empresa de ERP SaaS, com contato direto
+              com o time de Análise de Sistemas.
+            </p>
+            <p>
+              Tenho perfil analítico, orientado à resolução de problemas e à
+              comunicação eficiente entre as áreas técnica e de negócio. Inglês
+              avançado — escola Athus.
+            </p>
+          </div>
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line">
+                <span class="t-prompt">~$</span
+                ><span class="t-cmd">whoami</span>
+              </div>
+              <div class="t-line t-out">
+                <span class="t-key">vitor</span>.calliari
+              </div>
+              <div class="t-line">
+                <span class="t-prompt">~$</span
+                ><span class="t-cmd">cat perfil.json</span>
+              </div>
+              <div class="t-line t-out">
+                <span class="t-key">cargo</span>: "Analista de Suporte"
+              </div>
+              <div class="t-line t-out">
+                <span class="t-key">local</span>: "Toledo, PR"
+              </div>
+              <div class="t-line t-out">
+                <span class="t-key">idioma</span>: "Inglês avançado"
+              </div>
+              <div class="t-line t-out">
+                <span class="t-key">status</span>:
+                <span style="color: var(--green)">"buscando crescimento"</span>
+              </div>
+              <div class="t-line">
+                <span class="t-prompt">~$</span
+                ><span class="t-cmd" id="typed-cmd"></span
+                ><span class="cursor" style="font-size: 12px"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIÊNCIA -->
+      <section id="experiencia">
+        <div class="section-header reveal">
+          <span class="section-tag">experiência</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-left">
+              <span class="tl-period">2025 — atual</span>
+              <span class="tl-badge badge-active">● ativo</span>
+            </div>
+            <div class="tl-right">
+              <h3>Analista de Suporte</h3>
+              <p class="tl-company">// Inside Sistemas</p>
+              <ul class="tl-list">
+                <li>
+                  Gerenciamento de fila de atendimento via Kanban, garantindo
+                  SLA e satisfação do cliente
+                </li>
+                <li>
+                  Domínio dos módulos de vendas (CRM), estoque, financeiro e
+                  operacional do ERP
+                </li>
+                <li>
+                  Acompanhamento do fluxo completo de demandas com o time de
+                  Análise de Sistemas
+                </li>
+                <li>
+                  Treinamento de clientes sobre processos e funcionalidades do
+                  sistema
+                </li>
+                <li>
+                  Envio e acompanhamento de demandas técnicas aos times de
+                  desenvolvimento
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-left">
+              <span class="tl-period">2024 — 2025</span>
+              <span class="tl-badge badge-past">concluído</span>
+            </div>
+            <div class="tl-right">
+              <h3>Estágio em Desenvolvimento</h3>
+              <p class="tl-company">// Myse Sistemas</p>
+              <ul class="tl-list">
+                <li>
+                  Suporte N1/N2 — atendimento de clientes na utilização do ERP
+                </li>
+                <li>
+                  Backend: implementação de métodos em Java, Servlets e
+                  tratamento de dados
+                </li>
+                <li>
+                  Desenvolvimento e manutenção de interfaces JSP integradas ao
+                  Backend Java
+                </li>
+                <li>
+                  Reformulação de sites institucionais com HTML, CSS e Bootstrap
+                </li>
+                <li>
+                  Implementação de funcionalidades dinâmicas com JavaScript
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-left">
+              <span class="tl-period">2021 — 2023</span>
+              <span class="tl-badge badge-past">concluído</span>
+            </div>
+            <div class="tl-right">
+              <h3>Técnico Judiciário</h3>
+              <p class="tl-company">// 2ª Vara Cível de Toledo/PR</p>
+              <ul class="tl-list">
+                <li>
+                  Atendimento ao público e cumprimento de demandas judiciais
+                </li>
+                <li>
+                  Suporte às solicitações de advogados e partes processuais
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section id="habilidades">
+        <div class="section-header reveal">
+          <span class="section-tag">habilidades</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <span class="material-icons">settings</span>
+            <p class="skill-title">Backend</p>
+            <div class="tags">
+              <span class="tag tag-hi">Java</span>
+              <span class="tag tag-hi">MySQL</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Servlets</span>
+              <span class="tag">JSP</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="material-icons">computer</span>
+            <p class="skill-title">Frontend</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="material-icons">build</span>
+            <p class="skill-title">Ferramentas</p>
+            <div class="tags">
+              <span class="tag tag-hi">Git</span>
+              <span class="tag tag-hi">GitHub</span>
+              <span class="tag">Postman</span>
+              <span class="tag">VSCode</span>
+              <span class="tag">IntelliJ</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="material-symbols-outlined">autorenew</span>
+            <p class="skill-title">Metodologias</p>
+            <div class="tags">
+              <span class="tag tag-hi">Scrum</span>
+              <span class="tag tag-hi">Kanban</span>
+              <span class="tag">Análise de requisitos</span>
+              <span class="tag">Documentação técnica</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="material-symbols-outlined"> done_all </span>
+            <p class="skill-title">Domínios</p>
+            <div class="tags">
+              <span class="tag">ERP SaaS</span>
+              <span class="tag">CRM</span>
+              <span class="tag">Suporte N1/N2</span>
+              <span class="tag">API REST</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="material-icons">chat</span>
+            <p class="skill-title">Soft Skills</p>
+            <div class="tags">
+              <span class="tag">Comunicação</span>
+              <span class="tag">Perfil analítico</span>
+              <span class="tag">Trabalho em equipe</span>
+              <span class="tag">Gestão de demandas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO -->
+      <section id="formacao">
+        <div class="section-header reveal">
+          <span class="section-tag">formação</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-item reveal">
+            <div class="edu-period">2024 — 2026</div>
+            <div class="edu-content">
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p class="edu-school">Biopark Educação</p>
+              <span class="edu-tag">concluído em 2026</span>
+            </div>
+          </div>
+
+          <div class="edu-item reveal">
+            <div class="edu-period">2018 — 2023</div>
+            <div class="edu-content">
+              <h3>Bacharel em Direito</h3>
+              <p class="edu-school">
+                Unioeste — Câmpus Marechal Cândido Rondon/PR
+              </p>
+              <span class="edu-tag">concluído em 2023</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos">
+        <div class="section-header reveal">
+          <span class="section-tag">projetos</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card python reveal">
+            <div class="project-top">
+              <span class="material-symbols-outlined">wheat</span>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Vitor-Calliari/agrovision_ia"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-link"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                    />
+                  </svg>
+                  github
+                </a>
+              </div>
+            </div>
+            <div>
+              <p class="project-name">AgroVision IA</p>
+              <p class="project-desc">
+                Sistema inteligente de monitoramento rural com visão
+                computacional, agente de linguagem e análise climática em tempo
+                real.
+              </p>
+            </div>
+            <ul class="project-features">
+              <li>
+                Detecção de objetos em tempo real com YOLO (pessoas, veículos)
+              </li>
+              <li>
+                Agente de linguagem via Ollama para análise operacional em
+                linguagem natural
+              </li>
+              <li>
+                Coleta de dados climáticos em tempo real via Open-Meteo com
+                alertas automáticos
+              </li>
+              <li>
+                Dashboard web responsivo com feed ao vivo, chat e histórico de
+                eventos
+              </li>
+              <li>Persistência de eventos e imagens de detecção em SQLite</li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">YOLOv8</span>
+              <span class="stack-tag">OpenCV</span>
+              <span class="stack-tag">Ollama</span>
+              <span class="stack-tag">SQLite</span>
+              <span class="stack-tag">Pydantic</span>
+              <span class="stack-tag">Jinja2</span>
+            </div>
+          </div>
+
+          <div class="project-card flutter reveal">
+            <div class="project-top">
+              <span class="material-symbols-outlined">mobile</span>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Vitor-Calliari/mobile_arquitetura_01"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-link"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                    />
+                  </svg>
+                  github
+                </a>
+              </div>
+            </div>
+            <div>
+              <p class="project-name">Flutter Products App</p>
+              <p class="project-desc">
+                Aplicação mobile em Flutter com arquitetura em camadas,
+                consumindo a API DummyJSON para gerenciamento completo de
+                produtos.
+              </p>
+            </div>
+            <ul class="project-features">
+              <li>
+                Autenticação com token JWT, sessão em memória e logout com
+                limpeza de pilha
+              </li>
+              <li>
+                CRUD completo de produtos com feedback visual em cada operação
+              </li>
+              <li>
+                Arquitetura em camadas: domain, data, core e presentation bem
+                definidas
+              </li>
+              <li>
+                Gerenciamento de estado com ChangeNotifier e sealed classes para
+                estados
+              </li>
+              <li>
+                Cache local com fallback automático quando a API está
+                indisponível
+              </li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">Flutter</span>
+              <span class="stack-tag">Dart</span>
+              <span class="stack-tag">REST API</span>
+              <span class="stack-tag">ChangeNotifier</span>
+              <span class="stack-tag">Clean Architecture</span>
+              <span class="stack-tag">DummyJSON</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato">
+        <div class="section-header reveal">
+          <span class="section-tag">contato</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-grid">
+          <a
+            href="mailto:vitorcalliari@hotmail.com"
+            class="contact-card reveal"
+          >
+            <div class="contact-ico">
+              <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,12 2,6" />
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">e-mail</p>
+              <p class="c-value">vitorcalliari@hotmail.com</p>
+            </div>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/vitor-calliari-6b900a1b3"
+            target="_blank"
+            rel="noopener"
+            class="contact-card reveal"
+          >
+            <div class="contact-ico">
+              <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">linkedin</p>
+              <p class="c-value">vitor-calliari</p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/Vitor-Calliari"
+            target="_blank"
+            rel="noopener"
+            class="contact-card reveal"
+          >
+            <div class="contact-ico">
+              <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">github</p>
+              <p class="c-value">Vitor-Calliari</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Vitor Bernhard Calliari</p>
+      <p>Toledo, PR · Brasil</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
